@@ -81,7 +81,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TeamPiggyCoin/PiggyCore.git"
+    "url": "git+https://github.com/teampiggycoin/piggycore.git"
   },
   "browser": {
     "request": "browser-request"
