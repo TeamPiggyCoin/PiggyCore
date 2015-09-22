@@ -1,7 +1,7 @@
 {
-  "name": "bitcore",
+  "name": "piggycore",
   "version": "0.13.3",
-  "description": "A pure and powerful JavaScript Bitcoin library.",
+  "description": "A pure and powerful JavaScript PiggyCoin library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
   "scripts": {
@@ -54,10 +54,17 @@
     {
       "name": "Wei Lu",
       "email": "luwei.here@gmail.com"
+    },
+    {
+      "name": "Leigh Phillips",
+      "email": "neurocis@neurocis.me"
     }
   ],
   "keywords": [
     "bitcoin",
+    "piggycoin",
+    "btc",
+    "piggy",
     "transaction",
     "address",
     "p2p",
@@ -69,11 +76,12 @@
     "bip32",
     "bip37",
     "bip70",
-    "multisig"
+    "multisig",
+    "stake"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitpay/bitcore.git"
+    "url": "git+https://github.com/TeamPiggyCoin/PiggyCore.git"
   },
   "browser": {
     "request": "browser-request"
