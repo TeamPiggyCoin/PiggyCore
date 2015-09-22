@@ -6,31 +6,29 @@ var hex = function(hex) {
 
 exports.livenet = {
   name: 'livenet',
-  magic: hex('f9beb4d9'),
-  addressVersion: 0x00,
-  privKeyVersion: 128,
-  P2SHVersion: 5,
+  magic: hex('a1a0a2a3'),
+  addressVersion: 0x76,
+  privKeyVersion: 0xf6,
+  P2SHVersion: 0x1c,
   hkeyPublicVersion: 0x0488b21e,
   hkeyPrivateVersion: 0x0488ade4,
   genesisBlock: {
-    hash: hex('6FE28C0AB6F1B372C1A6A246AE63F74F931E8365E15A089C68D6190000000000'),
-    merkle_root: hex('3BA3EDFD7A7B12B27AC72C3E67768F617FC81BC3888A51323A9FB8AA4B1E5E4A'),
+    hash: hex('71927e0913d9df4a84afc62789fc189ad97ac2baa61b100c6bf7f5d661050000'),
+    merkle_root: hex('e9b87d9d9d2527da7cd5b05c59a6c63865f194d1e251778b720e6ce4e32daa5b'),
     height: 0,
-    nonce: 2083236893,
+    nonce: 987160,
     version: 1,
     prev_hash: buffertools.fill(new Buffer(32), 0),
-    timestamp: 1231006505,
-    bits: 486604799,
+    timestamp: 1401045631,
+    bits: 504365055,
   },
   dnsSeeds: [
-    'seed.bitcoin.sipa.be',
-    'dnsseed.bluematt.me',
-    'dnsseed.bitcoin.dashjr.org',
-    'seed.bitcoinstats.com',
-    'seed.bitnodes.io',
-    'bitseed.xf2.org'
+    'piggynodes.piggy-coin.com',
+    'piggynodes.piggyfacts.com',
+    'piggynodes.blockpunk.com',
+    'piggynodes.neurocis.me'
   ],
-  defaultClientPort: 8333
+  defaultClientPort: 54481
 };
 
 exports.mainnet = exports.livenet;

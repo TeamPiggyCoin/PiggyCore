@@ -47,12 +47,12 @@
   "main": "bitcore.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitpay/bitcore.git"
+    "url": "git+https://github.com/bitpay/bitcore.git"
   },
   "scripts": {
     "install": "node-gyp rebuild",
     "test": "node browser/build.js -a && node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter spec test",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- --reporter spec test",
     "prepublish": "node browser/build.js -a"
   },
   "dependencies": {
@@ -69,6 +69,7 @@
     "buffertools": "=2.1.2",
     "elliptic": "=1.0.0",
     "hash.js": "=0.3.2",
+    "x11-hash": "git://github.com/TeamPiggyCoin/node-x11-hash.git",
     "jsrsasign": "=0.0.3",
     "preconditions": "^1.0.7",
     "protobufjs": "=3.0.0",
