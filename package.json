@@ -1,6 +1,6 @@
 {
-  "name": "bitcore",
-  "description": "Bitcoin Library",
+  "name": "piggycore",
+  "description": "PiggyCoin Library",
   "version": "0.1.41",
   "author": {
     "name": "Stephen Pair",
@@ -34,20 +34,28 @@
     {
       "name": "Esteban Ordano",
       "email": "eordano@gmail.com"
+    },
+    {
+      "name": "Leigh Phillips",
+      "email": "neurocis@neurocis.me"
     }
   ],
   "keywords": [
     "bitcoin",
+    "piggycoin",
     "btc",
+    "piggy",
     "satoshi",
     "money",
     "currency",
-    "virtual"
+    "virtual",
+    "x11",
+    "stake"
   ],
   "main": "bitcore.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitpay/bitcore.git"
+    "url": "git+https://github.com/teampiggycoin/piggycore.git"
   },
   "scripts": {
     "install": "node-gyp rebuild",
@@ -63,13 +71,13 @@
     "bindings": "=1.1.1",
     "bn.js": "=1.0.0",
     "brfs": "=1.0.0",
-    "browserify-buffertools": "git://github.com/maraoz/browserify-buffertools.git",
-    "bufferput": "git://github.com/bitpay/node-bufferput.git",
+    "browserify-buffertools": "git://github.com/teampiggycoin/browserify-buffertools.git",
+    "bufferput": "git://github.com/teampiggycoin/node-bufferput.git",
     "buffers": "=0.1.1",
     "buffertools": "=2.1.2",
     "elliptic": "=1.0.0",
     "hash.js": "=0.3.2",
-    "x11-hash": "git://github.com/TeamPiggyCoin/node-x11-hash.git",
+    "x11-hash": "git://github.com/teampiggycoin/node-x11-hash.git",
     "jsrsasign": "=0.0.3",
     "preconditions": "^1.0.7",
     "protobufjs": "=3.0.0",
@@ -123,5 +131,12 @@
     "request": "2.39.0",
     "sinon": "^1.10.3",
     "uglifyify": "=1.2.3"
-  }
+  },
+  "readmeFilename": "README.md",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/teampiggycoin/piggycore/issues"
+  },
+  "homepage": "https://github.com/teampiggycoin/piggycore",
+  "_id": "piggycore@0.1.41"
 }
